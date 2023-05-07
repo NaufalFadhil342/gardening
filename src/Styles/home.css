@@ -1,0 +1,699 @@
+.homepage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 90vh;
+}
+
+.header .main {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header .main div {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 28, 28, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 10%;
+}
+
+.header .main div h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.header .main div h1 .line {
+  width: 30rem;
+  height: 2.5px;
+  margin: 0.75rem auto;
+  background-color: #49c215;
+}
+
+.header .main div p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* homepage services */
+
+.serviceHome {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.serviceHome .head {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceHome .head .highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.serviceHome .head .highlight .tagline,
+.aboutHome .vision .head .tagline,
+.workHome .header .tagline,
+.projectHome .head .tagline {
+  color: #49c215;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.serviceHome .head .highlight h1,
+.aboutHome .vision .head h1,
+.workHome .header h1,
+.projectHome .head h1 {
+  font-size: 3em;
+  color: #326e18;
+}
+
+.serviceHome .head .toService {
+  padding: 0.2rem 0;
+  border-bottom: 1.8px solid #49c215;
+}
+
+.serviceHome .head .toService a {
+  color: #326e18;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.serviceHome .head .toService a:hover {
+  color: #49c215;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.serviceHome .body {
+  width: 100%;
+  padding: 0 10%;
+  height: auto;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.serviceHome .body .serviceAction {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 14px 7px rgb(28, 28, 28, 0.1);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.serviceHome .body .serviceAction:hover {
+  border: 1.5px solid #326e18;
+  box-shadow: 0 0 0 rgb(28, 28, 28, 0);
+  cursor: pointer;
+}
+
+.serviceHome .body .serviceAction .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  color: #326e18;
+  background-color: #ebf6eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceHome .body .serviceAction .icon i {
+  font-size: 50px;
+  transform: rotate(30deg) translate(0, 6px);
+}
+
+.serviceHome .body .serviceAction h3,
+.workHome .body .rendered h3 {
+  color: #326e18;
+  font-size: 1.5em;
+}
+
+.serviceHome .body .serviceAction p,
+.workHome .body .rendered p {
+  color: #8c8c8c;
+  line-height: 1.75rem;
+}
+
+.serviceHome .body .serviceAction .readMore {
+  padding: 0.25rem 0;
+  border-bottom: 1.8px solid #49c215;
+}
+
+.serviceHome .body .serviceAction .readMore a {
+  text-decoration: none;
+  color: #326e18;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.serviceHome .body .serviceAction .readMore a:hover {
+  cursor: pointer;
+  color: #49c215;
+  transition: all 0.3s ease;
+}
+
+/* home about */
+
+.aboutHome {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.aboutHome .image,
+.aboutHome .vision {
+  flex: 50%;
+}
+
+.aboutHome .image div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutHome .vision {
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.aboutHome .vision .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutHome .vision .body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.aboutHome .vision .body p {
+  color: #8c8c8c;
+  width: 23rem;
+  line-height: 1.75rem;
+}
+
+.aboutHome .vision .body .benefit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aboutHome .vision .body .benefit div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #326e18;
+}
+
+.aboutHome .vision .body .benefit div svg {
+  color: #49c215;
+  font-size: 20px;
+}
+
+/* home work */
+
+.workHome {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.workHome .header {
+  width: fit-content;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workHome .body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.workHome .body .rendered {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.workHome .body .rendered .icon {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #ebf6eb;
+}
+
+.workHome .body .rendered .icon i {
+  font-size: 60px;
+  color: #326e18;
+}
+
+/* home contact */
+
+.contactHome {
+  width: 100%;
+  height: 27rem;
+}
+
+.contactHome .content {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHome .content .opacity {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 43, 72, 0.35);
+}
+
+.contactHome .content .head {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin: 6rem 0 0 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.contactHome .content .head div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactHome .content .head div p {
+  font-size: 2.5em;
+}
+
+.contactHome .content .head div h1 {
+  font-size: 3em;
+}
+
+/* home feed */
+
+.feedHome {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  margin: -15rem 0 2rem 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feedHome .rendered {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(28, 28, 28, 0.3);
+}
+
+.feedHome .rendered p {
+  color: #326e18;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.feedHome .rendered .user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.feedHome .rendered .user img {
+  width: 70px;
+  height: 70px;
+}
+
+.feedHome .rendered .user h3 {
+  color: #326e18;
+}
+
+.feedHome .rendered .user p {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+/* home project */
+
+.projectHome {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.projectHome .head {
+  width: fit-content;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.projectHome .head h1 {
+  width: 70%;
+  margin: auto;
+}
+
+.projectHome .body {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0 10%;
+}
+
+.projectHome .body .rendered {
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.projectHome .body .rendered .image-project {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectHome .body .rendered .image-project .backyard {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 110, 24, 0);
+  transform: scale(0);
+}
+
+.projectHome .body .rendered .image-project .title {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+.projectHome .body .rendered .image-project:hover .backyard {
+  background-color: rgb(50, 110, 24, 0.4);
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+.projectHome .body .rendered .image-project:hover .title {
+  opacity: 1;
+  transition: all ease;
+  transition-delay: 0.5s;
+}
+
+.projectHome .actions {
+  margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header .main div h1 {
+    font-size: 3em;
+  }
+
+  .header .main div h1 .line {
+    width: 70%;
+  }
+
+  .serviceHome .head {
+    padding: 0 5%;
+  }
+
+  .serviceHome .body {
+    padding: 0 2.5%;
+  }
+
+  .aboutHome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutHome .image div {
+    height: 25rem;
+  }
+
+  .aboutHome .vision {
+    box-shadow: 0 3px 6px rgb(28, 28, 28, 0.1);
+  }
+
+  .aboutHome .vision .body p {
+    width: 100%;
+  }
+
+  .aboutHome .vision .body .success {
+    margin: auto;
+  }
+
+  .workHome .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2.5%;
+  }
+
+  .contactHome .content .head {
+    padding: 0 2.5%;
+  }
+
+  .contactHome .content .head div {
+    width: fit-content;
+  }
+
+  .feedHome {
+    padding: 0 2.5%;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .projectHome .head {
+    padding: 0 5%;
+  }
+
+  .projectHome .head h1 {
+    width: 100%;
+  }
+
+  .projectHome .body {
+    padding: 0 2.5%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header .main div p {
+    font-size: 17px;
+  }
+
+  .serviceHome .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .serviceHome .head .toService {
+    margin: 5px 0 0 0;
+  }
+
+  .serviceHome .head .highlight h1,
+  .aboutHome .vision .head h1,
+  .workHome .header h1,
+  .projectHome .head h1 {
+    font-size: 2.5em;
+  }
+
+  .serviceHome .body {
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+
+  .aboutHome .vision {
+    padding: 6rem 5%;
+  }
+
+  .workHome .body {
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+
+  .contactHome .content .head {
+    margin: 12% 0 0 0;
+    padding: 0 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contactHome .content .head div {
+    text-align: center;
+  }
+
+  .contactHome .content .head div p {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .contactHome .content .head div h1 {
+    font-size: 2.5em;
+  }
+
+  .contactHome .content .head .success {
+    margin: auto;
+  }
+
+  .feedHome {
+    padding: 0 5%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projectHome .head {
+    padding: 0 5%;
+  }
+
+  .projectHome .head h1 {
+    width: 100%;
+  }
+
+  .projectHome .body {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .serviceHome .body {
+    padding: 0 0;
+  }
+
+  .aboutHome .vision {
+    padding: 6rem 7%;
+  }
+
+  .workHome .body {
+    flex-wrap: wrap;
+    padding: 0 0;
+  }
+
+  .contactHome .content .head {
+    padding: 0 7%;
+  }
+
+  .feedHome {
+    padding: 0 7%;
+  }
+
+  .feedHome {
+    margin: -10rem 0 2rem 0;
+    padding: 0 7%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projectHome .head {
+    padding: 0 7%;
+  }
+
+  .projectHome .body {
+    grid-template-columns: 1fr;
+  }
+}

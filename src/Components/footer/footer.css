@@ -1,0 +1,122 @@
+.footer {
+  width: 100%;
+  height: auto;
+  margin: 4rem 0 0 0;
+  padding: 1.5rem 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer .footer-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer .footer-info .forMoreInfo,
+.footer .footer-info .aboutInfo,
+.footer .footer-info .servicesInfo {
+  flex: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.footer .footer-info .forMoreInfo h1 {
+  color: #326e18;
+  font-size: 2.5em;
+  font-style: oblique;
+}
+
+.footer .footer-info .forMoreInfo h1 i {
+  color: #49c215;
+  font-style: normal;
+}
+
+.footer .footer-info .aboutInfo h2,
+.footer .footer-info .servicesInfo h2 {
+  color: #326e18;
+}
+
+.footer .footer-info .forMoreInfo div,
+.footer .footer-info .aboutInfo div,
+.footer .footer-info .servicesInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer .footer-info .forMoreInfo div p,
+.footer .footer-info .aboutInfo div p,
+.footer .footer-info .servicesInfo div p {
+  color: #636363;
+}
+
+.footer .footer-info .forMoreInfo div .tel-number {
+  color: #326e18;
+  font-size: 1.5em;
+}
+
+.footer .footer-info .forMoreInfo div .sosmed {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer-info .forMoreInfo div .sosmed .icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #636363;
+}
+
+.footer .footer-info .forMoreInfo div .sosmed .icon:hover {
+  border: none;
+  background-color: #326e18;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.footer .footer-info .forMoreInfo div .sosmed .icon i {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.footer .copyright {
+  width: 100%;
+  height: auto;
+  color: #636363;
+  display: flex;
+  align-items: center;
+}
+
+.footer .copyright p {
+  display: flex;
+  gap: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 5%;
+  }
+
+  .footer .footer-info {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .copyright {
+    justify-content: center;
+  }
+}

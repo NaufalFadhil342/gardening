@@ -1,0 +1,105 @@
+.navigation {
+  width: 100%;
+  height: 4rem;
+  background-color: #326e18;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.navigation h1 {
+  flex: 30%;
+  display: flex;
+  color: white;
+}
+
+.navigation h1 i {
+  color: #49c215;
+  font-style: oblique;
+}
+
+.navigation .navlink {
+  flex: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation .navlink nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation .navlink nav a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation .navlink nav a:hover {
+  color: #68d639;
+  transition: all 0.5s ease;
+}
+
+.navigation .navlink nav a.active {
+  color: #68d639;
+}
+
+.hidden-links {
+  display: none;
+}
+
+.navigation .tapMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation .navlink nav {
+    display: none;
+  }
+
+  .navigation .tapMenu {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navigation .tapMenu svg {
+    font-size: 22px;
+    color: white;
+  }
+
+  .navigation .hidden-links {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #326e18;
+  }
+
+  .navigation .hidden-links .links {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .navigation .hidden-links .links a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition-delay: 0.5s;
+  }
+
+  .navigation .hidden-links .links a:hover {
+    color: #68d639;
+    transition: all 0.5s ease;
+  }
+
+  .navigation .hidden-links .links a.active {
+    color: #68d639;
+  }
+}

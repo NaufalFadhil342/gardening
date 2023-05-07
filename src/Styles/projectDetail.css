@@ -1,0 +1,279 @@
+.projectDetail {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.projectDetail .header {
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectDetail .header .backyard {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 28, 28, 0.4);
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.projectDetail .header .backyard h1 {
+  text-align: center;
+  font-size: 4.5em;
+}
+
+.projectDetail .header .backyard a {
+  color: white;
+  font-size: 18px;
+}
+
+.projectDetail .header .backyard a:hover {
+  cursor: pointer;
+  color: #49c215;
+  transition: all 0.5s ease;
+}
+
+.projectDetail .body {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 0 0;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.projectDetail .body h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #326e18;
+}
+
+.projectDetail .body .image {
+  width: 55rem;
+  height: 35rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectDetail .body .before,
+.projectDetail .body .after {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.projectDetail .body .before h1,
+.projectDetail .body .after h1 {
+  font-size: 2em;
+}
+
+.projectDetail .body .before p,
+.projectDetail .body .after p {
+  color: #8c8c8c;
+  text-align: justify;
+  line-height: 1.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.projectDetail .body .before .firstStep,
+.projectDetail .body .after .lastStep {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.projectDetail .body .before .firstStep .stepOne,
+.projectDetail .body .before .firstStep .stepTwo {
+  width: 17rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projectDetail .body .before .firstStep .stepOne .rendered,
+.projectDetail .body .before .firstStep .stepTwo .rendered {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectDetail .body .after .lastStep .stepOne,
+.projectDetail .body .after .lastStep .stepTwo {
+  width: 17rem;
+  height: 25rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projectDetail .body .after .lastStep .stepOne .rendered,
+.projectDetail .body .after .lastStep .stepTwo .rendered {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectDetail .contact {
+  width: 100%;
+  height: 23rem;
+  margin: 2rem 0 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projectDetail .contact .backyard {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 28, 28, 0.4);
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectDetail .contact .backyard div {
+  color: white;
+}
+
+.projectDetail .contact .backyard div p {
+  font-size: 2.5em;
+}
+
+.projectDetail .contact .backyard div div {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1024px) {
+  .projectDetail .body .image {
+    width: 100%;
+  }
+
+  .projectDetail .contact .backyard div p {
+    width: 80%;
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectDetail .body {
+    padding: 0 5%;
+  }
+
+  .projectDetail .body .image {
+    width: 100%;
+  }
+
+  .projectDetail .body .before .firstStep,
+  .projectDetail .body .after .lastStep {
+    flex-wrap: wrap;
+  }
+
+  .projectDetail .contact .backyard {
+    padding: 0 5%;
+  }
+
+  .projectDetail .contact .backyard div p {
+    font-size: 2em;
+  }
+
+  .projectDetail .contact .backyard div div {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectDetail .body {
+    padding: 0 0;
+  }
+
+  .projectDetail .body h1 {
+    padding: 0 5%;
+  }
+
+  .projectDetail .body .image {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .projectDetail .body .before,
+  .projectDetail .body .after {
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  .projectDetail .body .before .firstStep,
+  .projectDetail .body .after .lastStep {
+    flex-wrap: wrap;
+  }
+
+  .projectDetail .contact .backyard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .projectDetail .contact .backyard div p {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projectDetail .body {
+    padding: 0 0;
+  }
+
+  .projectDetail .body h1 {
+    padding: 0 10%;
+  }
+
+  .projectDetail .body .image {
+    background-position: -20rem 0;
+  }
+
+  .projectDetail .body .before,
+  .projectDetail .body .after {
+    align-items: center;
+    padding: 0 10%;
+  }
+
+  .projectDetail .body .before .firstStep,
+  .projectDetail .body .after .lastStep {
+    flex-wrap: wrap;
+  }
+
+  .projectDetail .body .before .firstStep .stepOne,
+  .projectDetail .body .before .firstStep .stepTwo {
+    width: 100%;
+  }
+
+  .projectDetail .body .after .lastStep .stepOne,
+  .projectDetail .body .after .lastStep .stepTwo {
+    width: 100%;
+  }
+}

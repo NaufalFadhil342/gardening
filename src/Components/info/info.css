@@ -1,0 +1,21 @@
+.info {
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 10%;
+  display: flex;
+  gap: 1rem;
+}
+
+.info div {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  color: #1c1c1c;
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    padding: 0.75rem 7%;
+    justify-content: center;
+  }
+}

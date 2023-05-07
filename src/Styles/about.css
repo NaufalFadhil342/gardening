@@ -1,0 +1,341 @@
+.aboutPage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.aboutPage .headBackground {
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutPage .headBackground .frontyard {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  background-color: rgb(28, 28, 28, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPage .headBackground .frontyard h1 {
+  text-align: center;
+  color: white;
+  font-size: 4.5em;
+}
+
+.aboutPage .headBackground .frontyard a {
+  margin: 0.5rem 0 0 0;
+  color: white;
+}
+
+.aboutPage .headBackground .frontyard a:hover {
+  color: #68d639;
+  transition: all 0.5s ease;
+}
+
+/* working styling */
+
+.work {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.work .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.work .head .tagline,
+.staff .head .tagline {
+  color: #49c215;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.work .head h1 {
+  width: 60%;
+  font-size: 3em;
+  color: #326e18;
+}
+
+.work .body {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.work .body p {
+  text-align: justify;
+  color: #8c8c8c;
+  line-height: 1.3rem;
+}
+
+/* job styling */
+
+.job {
+  width: 100%;
+  height: auto;
+  margin: 3rem 0 0 0;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job .projects,
+.job .clients,
+.job .plants {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job .projects .amount,
+.job .clients .amount,
+.job .plants .amount {
+  color: #49c215;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.job .projects h3,
+.job .clients h3,
+.job .plants h3 {
+  color: #326e18;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.job .projects p,
+.job .clients p,
+.job .plants p {
+  color: #8c8c8c;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* invoked styling */
+
+.invoked {
+  width: 100%;
+  height: 23rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.invoked .frontyard {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+  background-color: rgb(32, 24, 17, 0.45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.invoked .frontyard div {
+  width: fit-content;
+}
+
+.invoked .frontyard div p {
+  font-size: 2.25em;
+  margin: 0 0 0.5rem 0;
+}
+
+.invoked .frontyard div .phoneNumber {
+  font-size: 3em;
+}
+
+/* staff styling */
+
+.staff {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.staff .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.staff .head h1 {
+  font-size: 3em;
+  color: #326e18;
+}
+
+.staff .body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.staff .body .owner,
+.staff .body .farmer,
+.staff .body .gardener {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.staff .body .owner .image,
+.staff .body .farmer .image,
+.staff .body .gardener .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.staff .body .owner .jobDesk,
+.staff .body .farmer .jobDesk,
+.staff .body .gardener .jobDesk {
+  color: #49c215;
+}
+
+.staff .body .owner .staffName,
+.staff .body .farmer .staffName,
+.staff .body .gardener .staffName {
+  color: #326e18;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding: 0 5%;
+  }
+
+  .work .head h1 {
+    width: 100%;
+  }
+
+  .job {
+    gap: 1rem;
+    padding: 0 5%;
+  }
+
+  .job .projects,
+  .job .clients,
+  .job .plants {
+    padding: 1.5rem 0;
+  }
+
+  .invoked .frontyard {
+    padding: 0 5%;
+  }
+
+  .invoked .frontyard div p {
+    width: 75%;
+    font-size: 2em;
+  }
+
+  .invoked .frontyard div .phoneNumber {
+    font-size: 2.7em;
+  }
+
+  .staff {
+    padding: 0 5%;
+  }
+
+  .staff .body {
+    gap: 2rem;
+  }
+
+  .staff .body .owner,
+  .staff .body .farmer,
+  .staff .body .gardener {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work .head h1 {
+    font-size: 2.5em;
+  }
+
+  .work .body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .job {
+    flex-wrap: wrap;
+  }
+
+  .invoked .frontyard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 5%;
+  }
+
+  .invoked .frontyard div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .invoked .frontyard div p {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .staff .head h1 {
+    font-size: 2.5em;
+  }
+
+  .staff .body {
+    width: 75%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .staff .body .owner,
+  .staff .body .farmer,
+  .staff .body .gardener {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .staff .body .owner,
+  .staff .body .farmer,
+  .staff .body .gardener {
+    height: 25rem;
+  }
+}
