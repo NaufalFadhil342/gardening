@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/gardening/static/css/main.3bb9027a.css",
+    "main.js": "/gardening/static/js/main.93dfa6e4.js",
+    "static/media/flush.jpg": "/gardening/static/media/flush.de031adb706a431d768c.jpg",
+    "static/media/farmer.jpg": "/gardening/static/media/farmer.c797c3d8292e18eced3e.jpg",
+    "static/media/about-image.jpg": "/gardening/static/media/about-image.337072a7ebd1c06af9cc.jpg",
+    "static/media/gardener.jpg": "/gardening/static/media/gardener.a04bb267975a61323afe.jpg",
+    "static/media/showering-plants.jpg": "/gardening/static/media/showering-plants.90ebe5f24741d96bb3a9.jpg",
+    "static/media/implement.jpg": "/gardening/static/media/implement.fe97456915fe359a5a29.jpg",
+    "static/media/planting.jpg": "/gardening/static/media/planting.2ea6a98e98b024731e6a.jpg",
+    "static/media/owner.jpg": "/gardening/static/media/owner.804275c2416c6e215d16.jpg",
+    "static/media/contact-image.jpg": "/gardening/static/media/contact-image.f900ff3acb92cc6fa7ad.jpg",
+    "static/media/mowing.jpg": "/gardening/static/media/mowing.e91a23edf6eb9beefbad.jpg",
+    "static/media/garden.jpg": "/gardening/static/media/garden.e76c42046ee28cda037d.jpg",
+    "static/media/woman.png": "/gardening/static/media/woman.b5f5d2994117daab0fa9.png",
+    "static/media/man.png": "/gardening/static/media/man.7b4e3c2baaf9f020667f.png",
+    "index.html": "/gardening/index.html",
+    "main.3bb9027a.css.map": "/gardening/static/css/main.3bb9027a.css.map",
+    "main.93dfa6e4.js.map": "/gardening/static/js/main.93dfa6e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bb9027a.css",
+    "static/js/main.93dfa6e4.js"
+  ]
+}
